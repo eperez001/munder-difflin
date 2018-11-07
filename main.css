@@ -29,7 +29,7 @@ li a:hover {
 }
 
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form_modal (some of the code used for this sign up was used as a base for my personal sign up button) */
-input[type=text], input[type=password] {
+/* input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -124,7 +124,7 @@ hr {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
-}
+} */
 
 .paper1 {
   background-image: linear-gradient(rgba(1, 0, 1, .5), rgba(0, 1, 0, 0.5)), url("paper.jpg");
