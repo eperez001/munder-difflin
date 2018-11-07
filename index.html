@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="main.css">
     <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-     <ul>
+     <link rel="stylesheet" href="main.css">
+<title></title>
+<ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#paper">Paper</a></li>
     <li><a href="#morepaper">More Paper</a></li>
     <li><a href="#evenmorepaper">Even More Paper</a></li>
-  </ul>
+</ul>
   </head>
 <body>
 <section class="paper1">
@@ -30,21 +30,81 @@
     </h2>
   </div>
 <div class="about-us">
-  <img src="munder.jpg" alt="munder">
+  <div class="box jackInTheBox animated">
+  <img class="jackInTheBox"src="munder.jpg" alt="munder">
 </div>
+</div>
+<div class="box jackInTheBox animated">
 <h3>(This Definitely Doesn't Have Anything To Do With The Office)</h3>
+</div>
 </center>
 </div>
 </content>
 <br>
 <content>
-<div>  <h4 class="w3-center">Automatic Slideshow</h4></div>
+  <div class="background3">
+    <center>
+    <div class="munder">
+      <h4 class="w3-center"><u>You Wanted Paper, You Got It!</u></h4>
+        <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="paper.jpg" style="width:200%, height:200%">
+        <img class="mySlides" src="paper1.jpg" style="width:200%, height:200%">
+        <img class="mySlides" src="paper2.jpg" style="width:200%, height:200%">
+      </div>
+    </div>
+    <div class="munder">
+      <h4>When we said we sell all types of papers, we weren't kidding! Munder Difflin is one of the world’s leading producers of fiber-based packaging, pulp and paper. We create packaging products that protect and promote goods, enable worldwide commerce and keep consumers safe; pulp for diapers, tissue and other personal hygiene products that promote health and wellness; and papers that facilitate education and communication.
+      Ofcourse we can't forget about our beloved origami paper (which we love the most)</h4>
+    </div>
+    </center>
+      <br>
+    <center><img id="reverse" src="origami.jpg" alt="origami" width="300px" height="170px" >
+    <img id="reverse" src="water.gif" alt="water" width="300px"height="170px">
+    <img id="reverse" src="swan1.gif" alt="swan" width="300px" height="170px">
+    <img id="reverse" src="paper3.gif" alt="paper3" width="300px" height="170px">
+  </center>
+ </div>
+</content>
+  <br>
+  <content>
+    <audio controls autoplay>
+    <source src="theoffice.ogg" type="audio/ogg">
+    <source src="The Office Theme Song.mp3" type="audio/mpeg">
+  </audio>
+    <h2>Munder Difflin</h2>
 
-  <div class="w3-content w3-section" style="max-width:500px">
-    <img class="mySlides" src="paper.jpg" style="width:200%, height:200%">
-    <img class="mySlides" src="paper1.jpg" style="width:200%, height:200%">
-    <img class="mySlides" src="paper2.jpg" style="width:200%, height:200%">
-  </div>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill to get all exclusive Paper Information</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+  </content>
   <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

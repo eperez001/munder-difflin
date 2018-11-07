@@ -27,6 +27,105 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form_modal (some of the code used for this sign up was used as a base for my personal sign up button) */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+button {
+    background-color: #663300;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #c2160a;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
 .paper1 {
   background-image: linear-gradient(rgba(1, 0, 1, .5), rgba(0, 1, 0, 0.5)), url("paper.jpg");
   height: 100%;
@@ -55,6 +154,9 @@ li a:hover {
   top: 50%;
   bottom: 50%;
 }
+.more{
+  display: inline-block;
+}
 .mySlides {display:none;
 text-align: center;
 width: 400px;
@@ -62,4 +164,64 @@ height: 250px;
 margin-left: 20%}
 h2{
   margin-left: 10%;
+}
+.background3{
+  height: 700px;
+  background-color: #c3c3a2
+}
+.munder{
+  display:inline;
+  width: 47%;
+  top: 30%;
+  bottom: 60%;
+}
+.animated {
+    -webkit-animation-duration: 14s;
+    animation-duration: 14s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@keyframes jackInTheBox {
+  from {
+    opacity: 1;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.jackInTheBox {
+  animation-name: jackInTheBox;
+}
+#reverse{
+  animation: rotate-reverse 11s;
+}
+@-webkit-keyframes rotate-reverse{
+  0%{
+    transform: rotate(360deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+@media only screen and (max-width: 800px){
+  img{
+    width: 100px; height: 75px;
+  }
 }
